@@ -1,0 +1,1 @@
+select distinct customers.id, customers.name, customers.country from customers join orders on customers.id = orders.customer_id where orders.ordered_at >= now() - interval '1 month';
