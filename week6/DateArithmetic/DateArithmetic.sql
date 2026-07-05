@@ -1,0 +1,1 @@
+select id, ordered_at, current_date - ordered_at::date as days_since from orders where ordered_at < current_date - interval '90 days';
