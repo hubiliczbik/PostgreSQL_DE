@@ -1,0 +1,1 @@
+select * from orders where status is distinct from 'refunded' and amount > 100;
